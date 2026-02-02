@@ -1,4 +1,9 @@
 import streamlit as st
+import streamlit_authenticator as stauth
+import yaml
+from yaml.loader import SafeLoader
+
+
 
 # 1. Configuration de la page
 st.set_page_config(layout="wide", page_title="Mon Projet Arabe")
@@ -81,7 +86,7 @@ st.markdown("""
 
         /* LE TITRE ENCADRÉ ROUGE */
         .custom-title {
-            background-color: #FF0000 !important;
+            background-color: #8B0000 !important;
             color: #FFFFFF !important;
             padding: 20px;
             border-radius: 15px;
