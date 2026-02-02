@@ -48,6 +48,19 @@ st.markdown("""
             padding-top: 1rem !important;
             text-align: right;
         }
+            /* --- CONFIGURATION MOBILE (Écrans réduits) --- */
+        @media (max-width: 991px) {
+            [data-testid="stSidebar"] {
+                right: auto !important; /* Streamlit gère l'ouverture auto */
+            }
+            [data-testid="stMainViewContainer"] {
+                margin-right: 0;
+            }
+            .custom-title {
+                font-size: 24px !important; /* Titre plus petit sur mobile */
+                padding: 10px !important;
+            }
+        }
 
         /* Application des polices aux éléments */
         [data-testid="stSidebar"] * {
@@ -111,7 +124,7 @@ if 'page' not in st.session_state:
 # 4. Contenu Principal
 if st.session_state.page == "home":
     display_title("مرحباً بك في الصفحة الرئيسية")
-    st.write("هذا النص يظهر بخط Amiri الرائع وتصميم متناسق.")
+    st.info("هذا النص يظهر بخط Amiri الرائع وتصميم متناسق.")
     
 elif st.session_state.page == "stats":
     display_title("لوحة الإحصائيات")
@@ -119,4 +132,4 @@ elif st.session_state.page == "stats":
 
 elif st.session_state.page == "settings":
     display_title("إعدادات النظام")
-    st.write("يمكنك تغيير الخيارات هنا.")
+    st.info("يمكنك تغيير الخيارات هنا.")
