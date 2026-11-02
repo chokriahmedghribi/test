@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- envelope with a map pin, drawn inside the 72dp safe zone of a 108dp adaptive icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M30,40h48a4,4 0,0 1,4 4v28a4,4 0,0 1,-4 4h-48a4,4 0,0 1,-4 -4v-28a4,4 0,0 1,4 -4z" />
+    <path android:strokeColor="#0f4c5c" android:strokeWidth="3" android:fillColor="#00000000"
+        android:strokeLineJoin="round"
+        android:pathData="M28,43l26,18l26,-18" />
+    <path android:fillColor="#e36414"
+        android:pathData="M72,26c-6.1,0 -11,4.9 -11,11c0,8.3 11,19 11,19s11,-10.7 11,-19c0,-6.1 -4.9,-11 -11,-11zM72,41a4,4 0,1 1,0 -8a4,4 0,0 1,0 8z" />
+</vector>

@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'tn.codepostal.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'tn.codepostal.app'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // keep the embedded page uncompressed-friendly and readable
+    androidResources {
+        noCompress 'html'
+    }
+}
